@@ -1,4 +1,6 @@
 # ng-graphql-github
+[![Build Status](https://travis-ci.org/Crevil/ng-graphql-github.svg?branch=master)](https://travis-ci.org/Crevil/ng-graphql-github)
+
 Demo application for showing GraphQL with Angular. This project allows for browsing and searching public repositories on [GitHub](https://github.com).
 
 It performs all queries on the GitHub REST and GraphQL API to show the performance differences.
