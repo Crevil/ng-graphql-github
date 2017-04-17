@@ -1,0 +1,18 @@
+.stars {
+  background-color: #569823;
+  padding: 0.2em;
+  border-radius: 1em;
+  width: 1em;
+  text-align: center;
+  margin-left: 1em;
+  display: inline-block;
+}
+
+md-card-title {
+  margin-bottom: 4px;
+}
+
+md-card {
+  margin-bottom: 1em;
+  max-width: 480px;
+}

@@ -1,0 +1,7 @@
+<h2>
+  Found repositories
+</h2>
+
+<ng-template ngFor let-repository [ngForOf]="repositories">
+  <app-repository-details [repository]="repository"></app-repository-details>
+</ng-template>
