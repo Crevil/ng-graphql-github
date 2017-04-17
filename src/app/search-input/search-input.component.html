@@ -1,2 +1,3 @@
-<label for="search-query">Repository name:</label>
-<input type="text" id="search-query" name="searchQuery" (change)="inputChanged($event)">
+<md-input-container hintLabel="Start typing to search for repositories">
+  <input mdInput type="text" placeholder="Repository name" (keyup)="inputChanged($event)">
+</md-input-container>

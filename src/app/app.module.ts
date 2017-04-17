@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 import {
   MdButtonModule,
   MdCardModule,
+  MdInputModule,
 } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -29,6 +30,7 @@ import { StarsComponent } from './stars/stars.component';
     HttpModule,
     MdButtonModule,
     MdCardModule,
+    MdInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

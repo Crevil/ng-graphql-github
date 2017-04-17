@@ -2,7 +2,11 @@ import {
   async,
   TestBed,
 } from '@angular/core/testing';
-import { MdCardModule } from '@angular/material';
+import {
+  MdCardModule,
+  MdInputModule,
+} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { RepositoryDetailsComponent } from 'app/repository-details/repository-details.component';
 import { RepositoryListComponent } from 'app/repository-list/repository-list.component';
@@ -22,7 +26,9 @@ describe('AppComponent', () => {
           StarsComponent,
         ],
         imports: [
+          BrowserAnimationsModule,
           MdCardModule,
+          MdInputModule,
         ],
       }).compileComponents();
   }));
