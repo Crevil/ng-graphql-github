@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { RepositoryDetailsComponent } from './repository-details/repository-details.component';
 import { RepositoryListComponent } from './repository-list/repository-list.component';
 import { SearchInputComponent } from './search-input/search-input.component';
+import { StarsComponent } from './stars/stars.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SearchInputComponent } from './search-input/search-input.component';
     RepositoryDetailsComponent,
     RepositoryListComponent,
     SearchInputComponent,
+    StarsComponent,
   ],
   imports: [
     BrowserAnimationsModule,

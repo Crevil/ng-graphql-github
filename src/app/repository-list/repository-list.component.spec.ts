@@ -6,6 +6,7 @@ import {
 import { MdCardModule } from '@angular/material';
 
 import { RepositoryDetailsComponent } from 'app/repository-details/repository-details.component';
+import { StarsComponent } from 'app/stars/stars.component';
 import { RepositoryListComponent } from './repository-list.component';
 
 describe('RepositoryListComponent', () => {
@@ -18,6 +19,7 @@ describe('RepositoryListComponent', () => {
         declarations: [
           RepositoryListComponent,
           RepositoryDetailsComponent,
+          StarsComponent,
         ],
         imports: [
           MdCardModule,
