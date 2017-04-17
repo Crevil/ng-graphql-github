@@ -6,6 +6,11 @@ node_js:
 #   only:
 #     - master
 
+addons:
+  apt:
+    packages:
+      - google-chrome-stable
+
 cache:
   directories:
     - node_modules
