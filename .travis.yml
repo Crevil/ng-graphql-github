@@ -6,6 +6,7 @@ node_js:
 #   only:
 #     - master
 
+dist: trusty
 addons:
   apt:
     packages:
