@@ -3,6 +3,7 @@ import {
   TestBed,
 } from '@angular/core/testing';
 
+import { SearchInputComponent } from 'app/search-input/search-input.component';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -10,6 +11,7 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
+        SearchInputComponent,
       ],
     }).compileComponents();
   }));
