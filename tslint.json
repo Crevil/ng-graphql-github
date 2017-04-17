@@ -108,6 +108,12 @@
       "check-separator",
       "check-type"
     ],
+    "no-unused-variable": [
+      true,
+      {
+        "ignore-pattern": "^_"
+      }
+    ],
     "directive-selector": [
       true,
       "attribute",

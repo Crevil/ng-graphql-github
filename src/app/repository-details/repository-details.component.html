@@ -1,0 +1,19 @@
+<md-card>
+  <md-card-content>
+    <div class="title">
+      <div>
+        {{repository?.name}}
+      </div>
+      <app-stars [count]=repository?.stars></app-stars>
+    </div>
+    <div class="subtitle">
+      by <a href="https://github.com/{{repository?.owner?.name}}" title="Go to users GitHub account">{{repository?.owner?.name}}</a>
+    </div>
+    <p>
+      {{repository?.description}}
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button *ngFor="let tag of repository?.tags">{{tag}}</button>
+  </md-card-actions>
+</md-card>

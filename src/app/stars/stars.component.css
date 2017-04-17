@@ -1,0 +1,12 @@
+div {
+  display: flex;
+}
+
+div > * {
+  flex: 0 1 auto;
+  align-self: center;
+}
+
+svg {
+  margin-right: 0.1em;
+}
