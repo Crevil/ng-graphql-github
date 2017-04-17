@@ -8,7 +8,7 @@
     "start": "ng serve",
     "build": "ng build --aot --prod --progress false",
     "test": "ng test",
-    "test.single": "npm run test -- --single-run --code-coverage --progress false",
+    "test.single": "npm run test -- --single-run --code-coverage --progress false --reporters dots",
     "lint": "ng lint --type-check",
     "e2e": "ng e2e --aot --prod --progress false",
     "verify": "npm run lint && npm run test.single && npm run e2e"
