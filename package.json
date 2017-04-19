@@ -6,12 +6,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --aot --prod --progress false",
+    "build": "ng build --aot --prod --progress false --base-href \"https://crevil.github.io/ng-graphql-github/\"",
+    "postbuild": "cp dist/index.html dist/404.html",
     "test": "ng test",
     "test.single": "npm run test -- --single-run --code-coverage --progress false --reporters dots",
     "lint": "ng lint --type-check",
     "e2e": "ng e2e --aot --prod --progress false",
-    "verify": "npm run lint && npm run test.single && npm run e2e"
+    "verify": "npm run lint && npm run test.single && npm run e2e",
+    "deploy": "ngh"
   },
   "private": true,
   "repository": {
@@ -49,6 +51,7 @@
     "@angular/compiler-cli": "4.0.2",
     "@types/jasmine": "2.5.45",
     "@types/node": "6.0.68",
+    "angular-cli-ghpages": "0.5.0",
     "codelyzer": "2.1.1",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "4.0.0",
