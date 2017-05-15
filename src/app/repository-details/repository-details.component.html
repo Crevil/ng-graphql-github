@@ -2,12 +2,12 @@
   <md-card-content>
     <div class="title">
       <div>
-        {{repository?.name}}
+        <a href="{{repository.url}}" title="Go to the repository">{{repository?.name}}</a>
       </div>
       <app-stars [count]=repository?.stars></app-stars>
     </div>
     <div class="subtitle">
-      by <a href="https://github.com/{{repository?.owner?.name}}" title="Go to users GitHub account">{{repository?.owner?.name}}</a>
+      by <a href="{{repository?.owner?.url}}" title="Go to users GitHub account">{{repository?.owner?.name}}</a>
     </div>
     <p>
       {{repository?.description}}
