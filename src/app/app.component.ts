@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
             url: item.owner.html_url,
           },
           stars: item.stargazers_count,
-          tags: undefined,
+          tags: [],
         } as IRepository));
       })
       .subscribe((repos) => this.repositories = repos);

@@ -7,8 +7,6 @@ import {
 } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 
-import 'rxjs/add/observable/fromPromise';
-
 import { IGitHubSearchResult } from 'app/github-search-result.model';
 
 @Injectable()
@@ -30,6 +28,6 @@ export class RestService {
     };
 
     return this.http.get(`${this.baseUrl}/search/repositories`, options)
-      .map((response) => response.json());
+      .map((response) => response.json() as IGitHubSearchResult);
   }
 }

@@ -1,5 +1,6 @@
 import { Http, RequestOptionsArgs, URLSearchParams } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+
 import { RestService } from './rest.service';
 
 describe('RestService', () => {
@@ -22,7 +23,7 @@ describe('RestService', () => {
       service.search(query);
 
       const options = getSpy.calls.mostRecent().args[1] as RequestOptionsArgs;
-      expect(options.headers.get('Accept')).toBe('application/vnd.github.v3+json');
+      expect(options.headers && options.headers.get('Accept')).toBe('application/vnd.github.v3+json');
     });
 
     it('should set q query parameter with query', () => {
