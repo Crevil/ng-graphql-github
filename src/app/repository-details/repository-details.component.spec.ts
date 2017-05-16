@@ -36,7 +36,8 @@ describe('RepositoryDetailsComponent', () => {
     repository = {
       name: 'apollo-client',
       description: 'GraphQL client for Angular',
-      owner: { name: 'Apollo' },
+      url: 'some-url',
+      owner: { name: 'Apollo', url: 'some-url' },
       stars: 5,
       tags: ['graphql', 'angular'],
     };

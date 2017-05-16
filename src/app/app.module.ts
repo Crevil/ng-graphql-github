@@ -9,11 +9,12 @@ import {
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { RepositoryDetailsComponent } from 'app/repository-details/repository-details.component';
+import { RepositoryListComponent } from 'app/repository-list/repository-list.component';
+import { RestService } from 'app/rest.service';
+import { SearchInputComponent } from 'app/search-input/search-input.component';
+import { StarsComponent } from 'app/stars/stars.component';
 import { AppComponent } from './app.component';
-import { RepositoryDetailsComponent } from './repository-details/repository-details.component';
-import { RepositoryListComponent } from './repository-list/repository-list.component';
-import { SearchInputComponent } from './search-input/search-input.component';
-import { StarsComponent } from './stars/stars.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { StarsComponent } from './stars/stars.component';
     MdCardModule,
     MdInputModule,
   ],
-  providers: [],
+  providers: [
+    RestService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
