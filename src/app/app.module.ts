@@ -9,6 +9,7 @@ import {
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AuthService } from 'app/auth.service';
 import { RepositoryDetailsComponent } from 'app/repository-details/repository-details.component';
 import { RepositoryListComponent } from 'app/repository-list/repository-list.component';
 import { RestService } from 'app/rest.service';
@@ -35,6 +36,7 @@ import { AppComponent } from './app.component';
   ],
   providers: [
     RestService,
+    AuthService,
   ],
   bootstrap: [AppComponent],
 })

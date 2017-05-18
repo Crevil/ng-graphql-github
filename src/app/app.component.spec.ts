@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Observable } from 'rxjs/Observable';
 
 import { ComponentFixture, tick } from '@angular/core/testing';
+import { AuthService } from 'app/auth.service';
 import { IGitHubSearchResult } from 'app/github-search-result.model';
 import { RepositoryDetailsComponent } from 'app/repository-details/repository-details.component';
 import { RepositoryListComponent } from 'app/repository-list/repository-list.component';
@@ -45,6 +46,12 @@ describe('AppComponent', () => {
             useValue: {
               search: (_) => Observable.of(),
             } as RestService,
+          },
+          {
+            provide: AuthService,
+            useValue: {
+              authenticate: () => { },
+            } as AuthService,
           },
         ],
       }).compileComponents();

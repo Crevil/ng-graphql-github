@@ -2,6 +2,7 @@
   <h1>
     Angular repo crawler
   </h1>
+  <button md-button (click)="logon()">Authenticate with GitHub</button>
   <app-search-input (query)="queryChanged($event)"></app-search-input>
 
   <app-repository-list [repositories]="repositories"></app-repository-list>
